@@ -112,13 +112,19 @@
             moveNode(nodeTitle, ix, iy);
             moveEdges(nodeTitle, ix, iy);
         }
+        function removeNode(nodeItem) {
+            $(nodeItem).remove();
+        }
+        function removeEdge(edgeItem) {
+            $(edgeItem).remove();
+        }
         function remove(nodeItem) {
             var nodeTitle = getTitleOfNode(nodeItem);
             var edges = getEdges(nodeTitle);
             edges.each(function () {
-                $(this).remove();
+                removeEdge(this);
             });
-            $(nodeItem).remove();
+            removeNode(nodeItem);
         }
         this.each(function () {
             $(this).children().children("g").each(function () {
@@ -171,6 +177,9 @@
                             this.originalY = event.clientY;
                         },
                         cursor: "crosshair"
+                    });
+                    $(this).dblclick(function () {
+                        removeEdge(this);
                     });
                 }
             });
