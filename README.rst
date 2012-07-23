@@ -42,3 +42,8 @@ Usage
             });
         })(jQuery);
     </script>
+
+Testing
+=======
+
+This jquery plugin has been tested on the browsers: Firefox, Google Chrome
