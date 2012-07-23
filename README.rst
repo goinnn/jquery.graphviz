@@ -4,7 +4,7 @@
 jQuery Graphviz plugin
 ======================
 
-With this plugin you can move (click and drag and drop) and remove (double click in a node) the nodes and the edges of a graph created with `graphviz <http://www.graphviz.org/>`_
+With this plugin you can move (click and drag and drop) and remove (double click on a node or on a edge) the nodes and the edges of a graph created with `graphviz <http://www.graphviz.org/>`_
 
 Dependences
 ===========
