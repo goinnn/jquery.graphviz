@@ -46,4 +46,4 @@ Usage
 Testing
 =======
 
-This jquery plugin has been tested on the browsers: Firefox, Google Chrome
+This jquery plugin has been tested on the browsers: Firefox and Google Chrome
