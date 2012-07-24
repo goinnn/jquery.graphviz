@@ -1,10 +1,8 @@
-.. contents::
-
 ======================
 jQuery Graphviz plugin
 ======================
 
-With this plugin you can move (click and drag and drop) and remove (double click on a node or on a edge) the nodes and the edges of a graph created with `graphviz <http://www.graphviz.org/>`_
+With this plugin you can move (click and drag and drop) and remove (double click on a node or on a edge) the nodes and the edges of a graph created with <a href="http://www.graphviz.org">graphviz</a>
 
 Dependences
 ===========
@@ -21,16 +19,15 @@ Usage
 
 * Add CSS
 
-
     <link rel="stylesheet" href="jquery.graphviz.css" />
 
 * Add JS
-
 
     <script type="text/javascript" src="jquery.graphviz.js"></script>
 
 * Initialize
 
+```js
     <script type="text/javascript">
         (function($){
             $(document).ready(function () {
@@ -38,6 +35,7 @@ Usage
             });
         })(jQuery);
     </script>
+```
 
 Testing
 =======
