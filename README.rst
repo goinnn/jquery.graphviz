@@ -46,4 +46,4 @@ Usage
 Testing
 =======
 
-This jquery plugin has been tested on the browsers: Firefox and Google Chrome, you can see in `jsfiddle <http://jsfiddle.net/Goin/eexfS/embedded/>`_
+This jquery plugin has been tested on the browsers: Firefox and Google Chrome, you can see in `jsfiddle <http://jsfiddle.net/Goin/eexfS/>`_
