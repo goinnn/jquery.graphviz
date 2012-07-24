@@ -9,8 +9,8 @@ With this plugin you can move (click and drag and drop) and remove (double click
 Dependences
 ===========
 
-* `jquery <http://jquery.com/>`_
-* `jquery-ui <http://jqueryui.com/>`_:
+* <a href="http://jquery.com">jquery</a>
+* <a href="http://jqueryui.com">jqueryui</a>:
  * jquery.ui.core.js
  * jquery.ui.widget.js
  * jquery.ui.mouse.js
@@ -21,19 +21,15 @@ Usage
 
 * Add CSS
 
-::
 
     <link rel="stylesheet" href="jquery.graphviz.css" />
 
 * Add JS
 
-::
 
     <script type="text/javascript" src="jquery.graphviz.js"></script>
 
 * Initialize
-
-::
 
     <script type="text/javascript">
         (function($){
@@ -46,4 +42,6 @@ Usage
 Testing
 =======
 
-This jquery plugin has been tested on the browsers: Firefox and Google Chrome
+This jquery plugin has been tested on the browsers: Firefox and Google Chrome:
+
+<iframe style="width: 100%; height: 300px" src="http://jsfiddle.net/Goin/eexfS/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
