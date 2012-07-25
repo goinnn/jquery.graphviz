@@ -47,3 +47,14 @@ Testing
 =======
 
 This jquery plugin has been tested on the browsers: Latest versions of Firefox, Safari and Google Chrome, and even IE9. You can see in `jsfiddle <http://jsfiddle.net/UdysN/>`_
+
+Releases
+========
+
+0.0.1  (2012-07-25)
+-------------------
+
+ * Move node and edges (drag and drop)
+ * Remove node and edges (dobleclick)
+ * Works, at least, Firefox, Safari, Google Chrome and IE9
+
