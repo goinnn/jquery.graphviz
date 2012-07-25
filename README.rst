@@ -23,13 +23,13 @@ Usage
 
 ::
 
-    <link rel="stylesheet" href="jquery.graphviz.css" />
+    <link rel="stylesheet" href="jquery.graphviz.0.0.1.css" />
 
 * Add JS
 
 ::
 
-    <script type="text/javascript" src="jquery.graphviz.js"></script>
+    <script type="text/javascript" src="jquery.graphviz.0.0.1.js"></script>
 
 * Initialize
 
