@@ -78,6 +78,8 @@
                     point.y2 = point.y2 + iy;
                 }
             }
+            // This is neccesary to works in IE9
+            pathItem.setAttribute("d", pathItem.getAttribute("d"));
         }
         function moveEdge(edgeItem, ix, iy, io) {
             var children = $(edgeItem).children();

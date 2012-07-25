@@ -46,4 +46,4 @@ Usage
 Testing
 =======
 
-This jquery plugin has been tested on the browsers: Firefox and Google Chrome, you can see in `jsfiddle <http://jsfiddle.net/Goin/eexfS/>`_
+This jquery plugin has been tested on the browsers: Latest versions of Firefox, Safari and Google Chrome, and even IE9. You can see in `jsfiddle <http://jsfiddle.net/UdysN/>`_
