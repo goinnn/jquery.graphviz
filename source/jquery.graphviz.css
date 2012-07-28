@@ -15,7 +15,23 @@
  along with this software.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-g.node,
-g.edge {
-    cursor: pointer;
+g.movable g.node,
+g.movable g.edge,
+g.movable g.edge polygon {
+    cursor: move;
+}
+
+g.editable g.node,
+g.editable g.edge {
+    cursor: text;
+}
+
+.jqueryGraphVizBarStatus a.selected {
+    border-color: red;
+    border-style: dotted;
+}
+
+path {
+    margin: 50px;
+    padding: 50px;
 }
