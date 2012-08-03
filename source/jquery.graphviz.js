@@ -187,25 +187,29 @@
             }
         }
         /* End graph functions */
-        /* StatusBar functions */
-        function createStatusBar(svg) {
-            var classStatusBar = "jqueryGraphVizBarStatus";
-            var ul = "<ul class=\"" + classStatusBar + "\" >";
+        /* ToolBar functions */
+        function createToolBar(svg) {
+            var classToolBar = "jqueryGraphVizToolBar";
+            var ul = "<ul class=\"" + classToolBar + "\" >";
             var classEditTexts = "editText";
+            var classAddNode = "addNode";
             var liEditText = "<li><a href=\"#editTexts\" class=\"" + classEditTexts + "\"> Edit Texts </a></li>";
+            var liAddNode = "<li><a href=\"#add\" class=\"" + classAddNode + "\"> Add Node </a></li>";
             var closeUl = "</ul>";
-            $(ul + liEditText + closeUl).insertBefore(svg);
-            $("." + classStatusBar + " li a." + classEditTexts).click(
+            $(ul + liEditText + liAddNode + closeUl).insertBefore(svg);
+            $("." + classToolBar + " li a." + classEditTexts).click(
                 bind(function () {
                     var editable = !$(this.node).hasClass("selected");
                     var newStatus, oldStatus;
                     if (editable) {
                         oldStatus = "movable";
                         newStatus = "editable";
+                        $(this.node).parent().addClass("selected");
                         $(this.node).addClass("selected");
                     } else {
                         oldStatus = "editable";
                         newStatus = "movable";
+                        $(this.node).parent().removeClass("selected");
                         $(this.node).removeClass("selected");
                     }
                     opts.status = newStatus;
@@ -215,8 +219,16 @@
                     return false;
                 }, {"svg": svg, "link": this})
             );
+            $("." + classToolBar + " li a." + classAddNode).click(
+                bind(function () {
+                    var node = $("g.node")[0].cloneNode();
+                    var graph = $(this.svg).children("g.graph");
+                    $(node).appendTo(graph);
+                    return false;
+                }, {"svg": svg, "link": this})
+            );
         }
-        /* end StatusBar functions */
+        /* end ToolBar functions */
         /* Util functions */
         function bind(func, attrs) {
             return function () {
@@ -234,7 +246,7 @@
         this.each(function () {
             var classOld;
             if (opts.statusbar) {
-                createStatusBar(this);
+                createToolBar(this);
             }
             classOld = $(this).children().filter("g.graph").attr("class");
             $(this).children().filter("g.graph").attr("class", classOld + " " + opts.status);

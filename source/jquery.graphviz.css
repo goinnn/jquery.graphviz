@@ -26,12 +26,38 @@ g.editable g.edge {
     cursor: text;
 }
 
-.jqueryGraphVizBarStatus a.selected {
-    border-color: red;
-    border-style: dotted;
-}
-
 path {
     margin: 50px;
     padding: 50px;
 }
+
+/* jqueryGraphVizToolBar */
+
+.jqueryGraphVizToolBar {
+    background-color: #417690;
+    border: 2px solid #6298B2;
+    color: #417690;
+    padding-left: 0px;
+}
+
+.jqueryGraphVizToolBar li {
+    display: inline;
+    border-right: 2px solid #6298B2;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.jqueryGraphVizToolBar li.selected {
+    border-color: red;
+    border-style: dotted;
+}
+
+.jqueryGraphVizToolBar li:last-child  {
+    border-right: none;
+}
+
+.jqueryGraphVizToolBar a {
+    color: #F4F37A;
+}
+
+/* end jqueryGraphVizToolBar */
